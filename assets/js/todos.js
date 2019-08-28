@@ -16,7 +16,7 @@ $(document).ready(function(){
         if(event.which === 13){
             var toDoText = $(this).val();
             $(this).val("");
-            $("ul").append("<li><span><i class='fa fa-trash'></i></span>" + toDoText + "</li>");
+            $("ul").append("<li><span class='delete'><i class='fa fa-trash'></i></span><span class='text'>" + toDoText + "</span></li>");
         }
 
     })

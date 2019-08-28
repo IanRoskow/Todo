@@ -62,7 +62,7 @@ li:nth-child(2n){
     float: right;
 }
 
-span{
+.delete{
     background-color: #e64c3c;
     margin-right: center;
     height: 40px;
@@ -74,7 +74,27 @@ span{
     opacity: 0;
 }
 
-li:hover span{
+.text{
+    padding-left: 22px;
+}
+
+li:hover .delete{
     width: 40px;
     opacity: 1.0;
+}
+
+@media( max-width: 760px){
+    #container {
+        width: 94%;
+        margin: 50px 3%;
+    }
+
+    li .delete{
+        width: 40px;
+        opacity: 1.0;
+    }
+
+    .delete {
+        float: right;
+    }
 }

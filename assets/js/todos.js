@@ -5,7 +5,7 @@ $(document).ready(function(){
         $(this).toggleClass("completed");
     });
 
-    $("ul").on("click", "span", function(event){
+    $("ul").on("click", ".delete", function(event){
         $(this).parent().fadeOut(500, function(){
             $(this).remove();
         });
@@ -23,5 +23,6 @@ $(document).ready(function(){
 
     $(".fa-plus").click(function(){
         $("input[type='text']").fadeToggle();
+        $("input[type='text']").focus();
     })
 })
